@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box?;
+}
+
+body{
+    background-color:black;
+}
+
+img {
+height: 1000px;
+width: 1000px;
+position: absolute;
+left: 100px;
+top: 100px;
+
+}
+
+h1 {
+    color: red;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.arrow {
+    color: #ff0000;
+    font-size: 100px;
+    animation: blink 0.7s infinite, move 1s infinite;
+    position: absolute;
+    top: 1100px;
+    left: 100px;
+}
+
+h3{
+    color: white;
+    font-family: BBH Bonge, sans-serif;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes move {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    position: relative;
+    left: 50px;
+    top: 1200px;
+    transition: background-color 1s ease;
+    transition: color 0.8s ease;
+}
+button:hover {
+    background-color: black;
+    color: #ff0000;
+}
+
